@@ -34,6 +34,7 @@ jobs:
             - uses: actions/download-artifact@master
               with:
                   name: build
+            - run: ls
             - name: Deploying...
               uses: w9jds/firebase-action@master
               with:
