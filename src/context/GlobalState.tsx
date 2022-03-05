@@ -31,7 +31,7 @@ const reducerFunc = (state: TransactionsState, action: TransactionAction) => {
 		case "REMOVE_TRANSACTION":
 			return {
 				transactions: state.transactions.filter(
-					(trans) => trans.id != payload.id
+					(trans) => trans.id !== payload.id
 				),
 			};
 		default:
